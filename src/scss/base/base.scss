@@ -1,0 +1,18 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: var(--text-font);
+    background-color: var(--light-gray);
+}
+

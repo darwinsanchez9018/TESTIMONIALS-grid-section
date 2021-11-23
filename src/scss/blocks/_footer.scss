@@ -1,0 +1,41 @@
+.footer {
+    // position: absolute;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 0 1.5rem;
+    padding-bottom: .5rem;
+    color: var(--grayish);
+
+    @include desktop {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -12rem;
+        width: 390px;
+    }
+
+    &__logo {
+        margin: 0;
+    }
+
+    &__img {
+        width: 50px;
+    }
+
+    &__info {
+        text-align: left;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: var(--violet);
+
+        &:hover {
+            @include desktop {
+                opacity: 70%;
+                font-weight: 600;
+            }
+        }
+    }
+}

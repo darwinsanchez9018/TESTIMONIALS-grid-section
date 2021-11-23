@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+
+@import "config/variables";
+@import "base/base";
+@import "mixins/reset-list";
+@import "mixins/breakpoints";
+
+
+@import "blocks/main";
+@import "blocks/card";
+@import "blocks/footer";

@@ -1,0 +1,18 @@
+mixin card(img, name, job, title, text, color="default")
+    .card
+        if color == "default"
+            .card__profile
+                img(src=`assets/images/${img}`, alt="profile-img").card__img
+                .card__info
+                    p.card__name= name
+                    p.card__job= job
+            p.card__title= title
+            p.card__text= text
+        if color == "alt"
+            .card__profile
+                img(src=`assets/images/${img}`, alt="profile-img").card__img
+                .card__info
+                    p.card__name= name
+                    p.card__job.card__job--alt= job
+            p.card__title.card__title--alt= title
+            p.card__text.card__text--alt= text
